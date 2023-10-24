@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="/app/fontiran.css" rel="stylesheet" />
+    <style>
+      body {
+        direction: rtl;
+        font-family: 'IranSansX', sans-serif;
+        padding: 10rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title"></h1>
+    <p id="content"></p>
+    <script>
+      var jsonData = {{jsonData}};
+      document.getElementById('title').textContent = jsonData.title;
+      document.getElementById('content').textContent = jsonData.content;
+    </script>
+  </body>
+</html>

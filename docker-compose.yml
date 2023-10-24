@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  search:
+    hostname: search_development
+    container_name: search_development
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
